@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>D&D 4th Edition Encounter Tracker</title>
+<!--<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" />-->
+<link type="text/css" rel="stylesheet" href="dnd.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery-cookie.js"></script>
+<script type="text/javascript" src="dnd.js"></script>
+</head>
+
+<body>
+
+<div id="main">
+	<a class='menuitem movebutton'><img src='move_icon.png' width='12px' /></a>
+	<strong>
+	<a id='menuSaveLoad' class='menuitem menuselect' onclick='drawSaveLoad()'>Save/Load</a> |
+	<a id='menuParty' class='menuitem' onclick='drawParty()'>Characters</a> |
+	<a id='menuMonsters' class='menuitem' onclick='drawMonsters()'>Monsters</a> |
+	<a id='menuQueue' class='menuitem' onclick='drawQueue()'>Queue</a>
+	</strong>
+	<hr>
+	<div id='queue'>
+	</div>
+</div>
+
+<br />
+
+<div id="stats">
+	<a class='menuitem movebutton'><img src='move_icon.png' width='12px' /></a>
+	<strong>Stats Window</strong>
+</div>
+
+<br />
+
+<div id="calculator">
+	<a class='menuitem movebutton'><img src='move_icon.png' width='12px' /></a>
+	<strong>Dice Calculator</strong>
+	<table>
+		<tr><td><button onclick='roll(4)'>d4</button></td><td id='d4' /></tr>
+		<tr><td><button onclick='roll(6)'>d6</button></td><td id='d6' /></tr>
+		<tr><td><button onclick='roll(8)'>d8</button></td><td id='d8' /></tr>
+		<tr><td><button onclick='roll(10)'>d10</button></td><td id='d10' /></tr>
+		<tr><td><button onclick='roll(12)'>d12</button></td><td id='d12' /></tr>
+		<tr><td><button onclick='roll(20)'>d20</button></td><td id='d20' /></tr>
+		<tr><td>Total</td><td id='total' /></tr>
+		<tr><td /><td><button onclick='clearRolls()'>Clear</button></td></tr>
+	</table>
+</div>
+
+<div id="legal">D&D is a trademark of Wizards of the Coast.</div>
+
+<!--
+<div id='options'>
+	<button onclick='moveBoxes()'>Move Boxes</button>
+</div>
+-->
+
+</body>
+</html>

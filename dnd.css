@@ -1,0 +1,158 @@
+
+div,input,textarea,select{ margin: 0px; padding: 0px; }
+
+table{ border-collapse: collapse; }
+
+td{ margin: 2px; padding: 2px; }
+
+button, a{ cursor: pointer; }
+
+.menuitem{
+	cursor: pointer;
+	border: 1px solid #EEEEEE;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	padding: 1px; }
+
+.menuitem:hover{
+	background: #DDDDDD;
+	color: #000000;
+	border: 1px solid #CCCCCC; }
+
+.menuselect, .menuselect:hover{
+	background: #000000;
+	color: #FFFFFF;
+	border: 1px solid #000000; }
+
+.movebutton{
+	cursor: move;
+	margin-right: 10px; }
+
+#main{
+	position: absolute;
+	z-index: 3;
+	top: 3px;
+	min-width: 350px;
+	width: 600px;
+	min-height: 25px;
+	overflow: hidden;
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	margin: 2px; padding: 2px;
+	-moz-box-shadow: 3px 3px 3px #999;
+	-webkit-box-shadow: 3px 3px 3px #999;
+	box-shadow: 3px 3px 3px #999; }
+	
+#main table{ width: 100%; }
+
+#main td{ text-align: center; }
+
+.list{ cursor: pointer; }
+
+tr.list > td{ white-space: nowrap; max-width: 200px; overflow: hidden; text-overflow: ellipsis; }
+
+div.statusouter { position: relative; }
+
+div.statusinner{ position: absolute; width: 100%; }
+
+.list:hover{ background: #DDDDDD; }
+
+.selected{ background: #007FFF !important; }
+
+.queued{ background: #00CC55 !important; }
+
+.bloodied{ color: #CC0000; }
+
+.dead{ color: #999999; }
+
+.temporary{ color: #BB00BB; }
+
+img.hit:hover{ background: #EFEFEF; }
+	
+#stats{
+	position: absolute;
+	z-index: 4;
+	top: 5px;
+	left: 625px;
+	/* width: 350px; */
+	min-width: 200px;
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC; 
+	margin: 2px; padding: 2px;
+	-moz-box-shadow: 3px 3px 3px #999;
+	-webkit-box-shadow: 3px 3px 3px #999;
+	box-shadow: 3px 3px 3px #999; }
+	
+#stats td{ margin: 10px; }
+
+#calculator{
+	position: absolute;
+	z-index: 5;
+	top: 380px;
+	left: 625px;
+	/*width: 300px;*/
+	min-width: 175px;
+	max-width: 350px;
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	margin: 2px; padding: 2px;
+	-moz-box-shadow: 3px 3px 3px #999;
+	-webkit-box-shadow: 3px 3px 3px #999;
+	box-shadow: 3px 3px 3px #999; }
+	
+#calculator td{ vertical-align: top; }
+
+#options{
+	position: absolute;
+	z-index: 6;
+	top: 650px;
+	left: 620px;
+	width: 300px;
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC; }
+	
+#legal{
+	position: fixed;
+	bottom: 0px;
+	font-size: 10px;
+	color: #888888; }
+	
+.popup{
+	position: absolute;
+	z-index: 7;
+	top: 100px;
+	left: 100px;
+	width: 400px;
+	height: 300px;
+	background: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	margin: 2px; padding: 2px;
+	-moz-box-shadow: 5px 5px 5px #999;
+	-webkit-box-shadow: 5px 5px 5px #999;
+	box-shadow: 5px 5px 5px #999; }
+	
+/** UI CSS **/
+.ui-resizable { position: relative;} 
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 
+99999; display: block;} 
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable- 
+autohide .ui-resizable-handle { display: none; } 
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: 
+-5px; left: 0px; } 
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: 
+-5px; left: 0px; } 
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0px; 
+height: 100%; } 
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0px; 
+height: 100%; } 
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; 
+right: 1px; bottom: 1px; } 
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: 
+-5px; bottom: -5px; } 
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: 
+-5px; top: -5px; } 
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: 
+-5px; top: -5px;} 
+
