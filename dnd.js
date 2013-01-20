@@ -1,5 +1,7 @@
 /* D&D Encounter Tracker
- * Written by Jody Zeitler
+ * Copyright (c) 2013 Jody Zeitler
+ * Licensed under the MIT license.
+ * D&D is a trademark of Wizards of the Coast.
  */
 
 var queue = new Array();
